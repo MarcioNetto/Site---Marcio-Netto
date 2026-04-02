@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Interativo Online | Jogo Educativo</title>
+  <meta name="description" content="Quiz interativo online com ranking, pontuação e desafios. Ideal para professores e alunos do Ensino Fundamental. Jogue agora." />
+  <meta name="keywords" content="quiz educativo, jogo educativo online, quiz escolar, kahoot educativo, atividade interativa, ensino fundamental" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Quiz Interativo Online | Jogo Educativo" />
+  <meta property="og:description" content="Jogo educativo online com ranking e pontuação para alunos e professores." />
+  <meta property="og:type" content="website" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed, #0ea5e9);
+      color: #fff;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+      width: 100%;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 14px;
+      font-weight: 800;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      max-width: 760px;
+      margin-bottom: 28px;
+      opacity: 0.95;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); opacity: 0.95; }
+    .btn-primary { background: #facc15; color: #111827; }
+    .btn-secondary { background: #ffffff; color: #312e81; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 30px;
+    }
+    .feature {
+      background: rgba(255,255,255,0.10);
+      border-radius: 18px;
+      padding: 20px;
+    }
+    .feature h3 {
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+    .section {
+      margin-top: 36px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 24px;
+    }
+    .section h2 {
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    .app-frame {
+      margin-top: 24px;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #fff;
+      min-height: 700px;
+    }
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      background: #fff;
+    }
+    footer {
+      margin-top: 28px;
+      font-size: 0.95rem;
+      opacity: 0.9;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      .card { padding: 24px; }
+      iframe { height: 600px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <div class="container">
+      <div class="card">
+        <h1>Quiz Interativo Online</h1>
+        <p class="subtitle">
+          Plataforma de jogo educativo com perguntas, pontuação, ranking e desafios para tornar a aprendizagem mais dinâmica, divertida e interativa.
+        </p>
+
+        <div class="buttons">
+          <a class="btn btn-primary" href="https://script.google.com/macros/s/AKfycbz7SS2DFEPmy-RwR29XHeFZh7PDRuj3SUXBM9kVNrpXhmCDu8EhNjbxw8Txr-ZGDhLx/exec" target="_blank" rel="noopener noreferrer">Jogar agora</a>
+          <a class="btn btn-secondary" href="#app">Ver demonstração</a>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <h3>🏆 Ranking</h3>
+            <p>Classificação dos participantes para aumentar o engajamento.</p>
+          </div>
+          <div class="feature">
+            <h3>📱 Responsivo</h3>
+            <p>Funciona em celular, tablet e computador.</p>
+          </div>
+          <div class="feature">
+            <h3>🎯 Aprendizagem ativa</h3>
+            <p>Ideal para revisar conteúdos com mais interação e participação.</p>
+          </div>
+          <div class="feature">
+            <h3>⚡ Acesso rápido</h3>
+            <p>Entrou no site, clicou e começou a jogar.</p>
+          </div>
+        </div>
+
+        <section class="section">
+          <h2>Sobre o projeto</h2>
+          <p>
+            Este jogo educativo online foi desenvolvido para apoiar professores e estudantes com uma experiência semelhante às plataformas de quiz modernas. A proposta é unir diversão, participação e aprendizagem em um ambiente simples e acessível.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Para quem é indicado</h2>
+          <ul>
+            <li>Professores que desejam aplicar atividades interativas.</li>
+            <li>Alunos do Ensino Fundamental e Médio.</li>
+            <li>Escolas que procuram recursos digitais de aprendizagem.</li>
+            <li>Turmas que precisam de revisão com gamificação.</li>
+          </ul>
+        </section>
+
+        <section class="section" id="app">
+          <h2>Aplicativo incorporado</h2>
+          <p>Se o navegador permitir, o jogo pode ser exibido diretamente abaixo:</p>
+          <div class="app-frame">
+            <iframe src="https://script.google.com/macros/s/AKfycbz7SS2DFEPmy-RwR29XHeFZh7PDRuj3SUXBM9kVNrpXhmCDu8EhNjbxw8Txr-ZGDhLx/exec" title="Quiz Interativo"></iframe>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Palavras-chave para o Google</h2>
+          <p>
+            quiz educativo, jogo educativo online, quiz escolar, atividade interativa, jogo para alunos, revisão gamificada, quiz para professores.
+          </p>
+        </section>
+
+        <footer>
+          Página criada para divulgação e indexação do aplicativo educacional na internet.
+        </footer>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
